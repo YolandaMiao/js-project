@@ -7,7 +7,7 @@ body{
 
 #container{
 	width:60%;
-	background-color:#199fdb;
+	background-color:#169fdb;
 	margin:20px auto;
 	overflow:auto;
 	padding:25px;
@@ -25,7 +25,7 @@ header h1{
 
 header p{
 	padding:0;
-	margin-top:5px;
+	margin-top:10px;
 	color:#000;
 }
 
