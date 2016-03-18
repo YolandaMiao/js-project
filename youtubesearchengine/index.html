@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Youtube Search Engine</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.css">
+		<link rel="stylesheet" href="css/jquery.fancybox-thumbs.css">
+		<link rel="stylesheet" href="css/jquery.fancybox-buttons.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/jquery.fancybox.pack.js"></script>
+		<script src="js/jquery.fancybox-media.js"></script>
+		<script src="js/jquery.fancybox-thumbs.js"></script>
+		<script src="js/jquery.fancybox-buttons.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".fancybox").fancybox();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<h1>Search<span>Video</span></h1>
+				<p>Show all the videos from a Youtube Channel.</p>
+			</header>
+			<section>
+				<form id="search-form" name="search-form" onsubmit="return search()">
+					<div class="fields">
+					<input type="search" id="search-text" name="search-text" placeholder="Search Youtube...">
+					<input type="submit" id="submit-btn" name="submit-btn" value=" ">
+					</div>	
+				</form>
+				<ul id="results"></ul>
+				<div id="buttons"></div>
+			</section>
+			<footer>
+				<p>Copyright &copy; 2016, All Rights Reserved.</p>
+			</footer>
+		</div>
+	</body>
+</html>
