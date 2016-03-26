@@ -12,4 +12,4 @@
 jQuery - [http://jquery.com](http://jquery.com)
 
 ##License##
-Meow License
+MIT License

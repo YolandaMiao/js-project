@@ -1,0 +1,32 @@
+{
+    "name": "linkIt",
+    "title": "linkIt jQuery Plugin",
+    "description": "jQuery plugin for converting any element into a link.",
+    "keywords": [
+        "link",
+        "content"
+    ],
+    "version": "0.1.0",
+    "author": {
+        "name": "Yolanda Xu",
+        "url": "https://github.com/YolandaMiao/js-project/tree/master/linkIt/jquery.linkIt"
+    },
+    "maintainers": [
+        {
+            "name": "Yolanda Xu",
+            "email": "ying.xu12@yahoo.com",
+            "url": "https://github.com/YolandaMiao/js-project/tree/master/linkIt/jquery.linkIt"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/YolandaMiao/js-project/tree/master/linkIt/jquery.linkIt/license.txt"
+        }
+    ],
+    "homepage": "https://github.com/YolandaMiao/js-project/tree/master/linkIt/jquery.linkIt",
+    "docs": "https://github.com/YolandaMiao/js-project/tree/master/linkIt/jquery.linkIt",
+    "dependencies": {
+        "jquery": ">=1.9"
+    }
+}

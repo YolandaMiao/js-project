@@ -2,9 +2,20 @@
 <html>
 	<head>
 		<title>Plugin Example</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src = "jquery.linkIt/jquery.linkIt.js"></script>
+		<script>
+			$(document).ready(function (){
+				$("span").linkIt({
+					href: "http://www.w3schools.com",
+					text: "meow",
+					target: "_blank"
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<h1>LinkIt Demo</h1>
-		<p>This is the jQuery linkIt plugin demo. Let's make <span>this text</span> into a link</p>
+		<p>This is the jQuery linkIt plugin demo. Let's make <span>this text</span> into a link.</p>
 	</body>
 </html>
