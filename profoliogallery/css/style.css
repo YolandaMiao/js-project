@@ -1,0 +1,156 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:"Ariel",sans-serif;
+	font-size:15px;
+	color:#666;
+	line-height:1.6em;
+}
+
+a {
+	color: #666;
+	text-decoration:none;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+	overflow:auto;
+}
+
+header {
+	background:#333;
+	min-height:55px;
+	color:#fff;	
+}
+
+#logo {
+	width: 30%;
+	float:left;
+	margin-top:15px;
+
+}
+
+nav {
+	float:right;
+	width:70%;
+}
+
+nav #tags {
+	float:right;
+}
+
+#tags li{
+	float:left;
+	list-style-type:none;
+	padding:0px 10px;
+}
+
+#tags li a {
+	color: #fff;
+	padding-bottom: 5px;
+	text-decoration:none;
+}
+
+#tags li.current a,#tags li a:hover {
+	color: #03899c;
+	border-bottom:#03899c 3px solid;
+}
+
+section{
+	overflow:hidden;
+}
+
+.tagline {
+	background: #03899c;
+}
+
+.tagline #subtitle {
+	padding:35px;
+	margin:0px;
+	text-align:center;
+	font-size:35px;
+	color:#fff;
+}
+
+#heading {
+	padding:20px 0px;
+}
+
+#gallery {
+	list-style-type: none;
+	margin:0px;
+	padding:0px;
+}
+
+#gallery li {
+	display:block;
+	float:left;
+	width:23%;
+	cursor:pointer;
+	margin: 0px 12px 7px 0px;
+	position:relative;
+}
+
+#gallery img{
+	width:100%;
+	border-radius:5px;
+}
+
+.overlay{
+	display:none;
+	background:#03899c url(../img/overlay.png) no-repeat top center;
+	color:#fff;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:100;
+	width:100%;
+	height:100%;
+	padding:20px;
+	border-radius:5px;
+	box-sizing:border-box;
+	overflow:auto; /*once pointer-events set none, nothing happen when click or scroll*/ 
+	/*initially div cover the link of img, pointer-events let us click thru the link*/
+	pointer-events:none;
+}
+
+.overlay h3 {
+	margin:0;
+	padding:0;
+}
+
+footer {
+	background: #03899c;
+	color:#fff;	
+	text-align:center;
+	height:55px;
+	padding-top:10px;
+}
+
+@media(max-width:768px) {
+	#logo, nav {
+		float:none;
+		width:100%;
+		text-align:center;
+	}
+	
+	nav #tags, #tags li {
+		float:none;
+		padding: 8px;
+	}
+	
+	#gallery li {
+		margin-right:8px;
+		width:48%;
+	}
+	
+}
+
+@media(max-width:500px){
+	#gallery li {
+		float:none;
+		width:100%;
+		margin-bottom:10px;
+	}
+}
