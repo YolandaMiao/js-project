@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mile Tracker</title>
+	
+	<!-- Include meta tag to ensure proper rendering and touch zooming -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+	<link rel = "stylesheet" href = "css/style.css">
+	
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src = "js/script.js"></script>
+	<script>
+		$(document).ready(function(){
+				$(".date").each(function (){
+				$(this).datepicker();
+			});
+		});	
+	</script>
+</head>
+<body>
+	<!--Start of home page-->
+	<div data-role = "page" id = "home">
+		<div data-role = "header" data-theme = "b">
+			<h1>Mile Tracker</h1>
+		</div>
+		<div data-role = "navbar" data-theme = "a">
+			<ul>
+				<li><a href = "#home" class = "ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-top" data-transition="flip">Home</a></li>
+				<li><a href = "#add" class = "ui-btn ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-top" data-transition="flip">Add Run</a></li>
+			</ul>
+		</div>	
+		<div data-role = "content"  data-theme = "a">
+			<h3>Welcome to the MileTracker App!</h3>
+			<p>With this app you cantrack your running, jogging or walking miles.</p>
+			<h3>Your Latest Runs</h3>
+			
+			<ul id = "stats" data-role = "listview" data-filter = "true" data-filter-placeholder = "Filter runs by date or distance" data-inset = "true"></ul>
+			<br>
+			<button id = "clearRuns" class = "ui-btn ui-btn-b ui-shadow ui-btn-corner-all" onclick = "return confirm('Are you sure?')">Clear Total Mileage</button>
+		</div>
+		<div data-role = "footer" data-theme = "b">
+			<h4>Mile Tracker &copy; 2016, Mile Tracker</h4>
+		</div>
+	</div>
+
+	<!--Add page-->
+	<div data-role = "page" id = "add">
+		<div data-role = "header" data-theme = "b">
+			<h1>Mile Tracker</h1>
+		</div>
+		<div data-role = "navbar" data-theme = "a">
+			<ul>
+				<li><a href = "#home" class = "ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-top" data-transition="flip">Home</a></li>
+				<li><a href = "#add" class = "ui-btn ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-top" data-transition="flip">Add Run</a></li>
+			</ul>
+		</div>	
+		<div data-role = "content"  data-theme = "a">
+			<h3>Add Your Run</h3>
+			
+			<form>
+				<label>Enter Miles:</label>
+				<input type = "text" data-theme = "a" id = "addMile"><br>
+				<label>Enter Date:</label>
+				<input type = "text" data-theme = "a" class = "date" id = "addDate" data-inline = "true"><br>
+			</form>
+			
+			<button class = "ui-btn ui-btn-b ui-shadow ui-btn-corner-all" id = "submitAdd">Submit</button>
+		</div>
+		<div data-role = "footer" data-theme = "b">
+			<h4>Mile Tracker &copy; 2016, Mile Tracker</h4>
+		</div>
+	</div>
+	
+	<!--Edit page-->
+	<div data-role = "page" id = "edit">
+		<div data-role = "header" data-theme = "b">
+			<h1>Mile Tracker</h1>
+		</div>
+		<div data-role = "navbar" data-theme = "a">
+			<ul>
+				<li><a href = "#home" class = "ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-top" data-transition="flip">Home</a></li>
+				<li><a href = "#add" class = "ui-btn ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-top" data-transition="flip">Add Run</a></li>
+			</ul>
+		</div>	
+		<div data-role = "content"  data-theme = "a">
+			<h3>Edit Your Run</h3>
+			
+			<form>
+				<label>Enter Miles:</label>
+				<input type = "text" data-theme = "a" id = "editMile"><br>
+				<label>Enter Date:</label>
+				<input type = "text" data-theme = "a" class = "date" id = "editDate" data-inline = "true"><br>
+			</form>
+			
+			<button class = "ui-btn ui-btn-b ui-shadow ui-btn-corner-all" id = "submitEdit">Update</button>
+		</div>
+		<div data-role = "footer" data-theme = "b">
+			<h4>Mile Tracker &copy; 2016, Mile Tracker</h4>
+		</div>
+	</div>
+</body>
+</html>
