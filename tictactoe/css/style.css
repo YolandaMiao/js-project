@@ -1,0 +1,53 @@
+body {
+	background:#1c1b1b;
+	color:#fff;
+	font-family:"ariel",sans-serif;
+	text-align:center;
+}
+
+#container {
+	background:#666;
+	border-radius:10px;
+	margin:40px auto;
+	width: 350px;
+	padding-bottom:40px;
+	overflow:auto;
+}
+
+#board li {
+	background:#333;
+	border-radius:5px;
+	float:left;
+	width:70px;
+	height:70px;
+	font-size:55px;
+	list-style-type:none;
+	margin:10px;
+}
+
+#board li:hover, #reset:hover {
+	cursor:pointer;
+	background:#000;
+}
+
+.clearfix {
+	clear:both;
+}
+
+#reset {
+	border:0px;
+	border-radius:5px;
+	width:70%;
+	color:#fff;
+	background:#444;
+	padding:15px;
+	margin-top: 20px;
+}
+
+.o {
+	color:green !important;
+}
+
+.x {
+	color:red !important;
+}
