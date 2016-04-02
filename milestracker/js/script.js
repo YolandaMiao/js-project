@@ -8,7 +8,7 @@ $(document).one("pagecreate",function(){
 	// edit handler
 	$("#submitEdit").tap(editRun);
 	
-	// set current handler, child selector is list, which is parent of editLink 
+	// set current handler
 	$(".editLink").tap(setCurrentRun);
 	
 	// delete list item 
@@ -36,9 +36,6 @@ $(document).one("pagecreate",function(){
 	
 	// create function to set the current run
 	function setCurrentRun() {
-		// get index of <li> element
-		//var idx = $(this).index();
-		
 		// set local storage items
 		localStorage.setItem("currentDate", $(this).data("date"));
 		localStorage.setItem("currentMile", $(this).data("mile"));
